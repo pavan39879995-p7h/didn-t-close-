@@ -1,75 +1,280 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Skygarden Bar & Kitchen | Koramangala Rooftop Restaurant</title>
+<title>Skygarden Bar & Kitchen | Koramangala Rooftop Bar</title>
 
 <meta name="description"
-content="Skygarden Bar & Kitchen Koramangala rooftop bar Bangalore offering cocktails, DJ nights and premium dining experience.">
+content="Skygarden Bar & Kitchen Koramangala Bangalore rooftop restaurant offering cocktails, nightlife and premium dining experience.">
 
-<meta name="keywords"
-content="Skygarden Bar Kitchen, Koramangala bar, rooftop restaurant Bangalore">
-
-<link rel="stylesheet"
-href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
 rel="stylesheet">
 
+<style>
 
-<!-- Schema SEO -->
+body{
 
-<script type="application/ld+json">
-
-{
-
-"@context":"https://schema.org",
-
-"@type":"Restaurant",
-
-"name":"Skygarden Bar & Kitchen",
-
-"address":{
-
-"@type":"PostalAddress",
-
-"streetAddress":"132 17th Main Koramangala",
-
-"addressLocality":"Bangalore",
-
-"addressRegion":"Karnataka",
-
-"postalCode":"560095",
-
-"addressCountry":"India"
-
-},
-
-"servesCuisine":"Asian Bar Food",
-
-"telephone":"+919008710642"
+margin:0;
+font-family:Poppins;
+background:#0a0a0a;
+color:white;
 
 }
 
-</script>
+header{
 
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+background:black;
+position:sticky;
+top:0;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:14px;
+
+}
+
+.hero{
+
+height:90vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.7),
+rgba(0,0,0,.7)),
+
+url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1920");
+
+background-size:cover;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+padding-left:8%;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+margin:0;
+
+}
+
+.hero p{
+
+color:#ccc;
+
+margin:10px 0;
+
+}
+
+.btn{
+
+background:gold;
+
+color:black;
+
+padding:14px 30px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:600;
+
+display:inline-block;
+
+margin-top:20px;
+
+}
+
+section{
+
+padding:80px 8%;
+
+}
+
+h2{
+
+font-size:32px;
+
+margin-bottom:20px;
+
+}
+
+.about{
+
+max-width:700px;
+
+color:#ccc;
+
+line-height:1.7;
+
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+border-radius:10px;
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+.menu{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.menu div{
+
+background:#111;
+
+padding:25px;
+
+border-radius:10px;
+
+}
+
+.contact{
+
+text-align:center;
+
+}
+
+input{
+
+width:260px;
+
+padding:12px;
+
+margin:10px;
+
+border:none;
+
+border-radius:6px;
+
+}
+
+button{
+
+background:gold;
+
+border:none;
+
+padding:14px 30px;
+
+border-radius:6px;
+
+font-weight:600;
+
+}
+
+footer{
+
+text-align:center;
+
+padding:30px;
+
+background:black;
+
+color:#aaa;
+
+}
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:#25D366;
+
+padding:16px;
+
+border-radius:50px;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+.call{
+
+position:fixed;
+
+bottom:90px;
+
+right:20px;
+
+background:gold;
+
+padding:16px;
+
+border-radius:50px;
+
+color:black;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+</style>
 
 </head>
 
-
 <body>
-
 
 <header>
 
-<h1>Skygarden</h1>
-
+<h2>Skygarden</h2>
 
 <nav>
 
@@ -77,29 +282,153 @@ rel="stylesheet">
 
 <a href="#about">About</a>
 
-<a href="#menu">Menu</a>
-
 <a href="#gallery">Gallery</a>
 
-<a href="#contact">Contact</a>
+<a href="#menu">Menu</a>
+
+<a href="#contact">Reserve</a>
 
 </nav>
-
 
 </header>
 
 
-
 <section class="hero">
 
-<h2>Luxury Rooftop Dining Experience</h2>
+<h1>Skygarden Bar & Kitchen</h1>
 
-<p>Koramangala • Cocktails • DJ Nights</p>
+<p>Koramangala Rooftop Dining Experience</p>
 
+<p>⭐ 4.4 Rating • ₹1500 for two • Open till midnight</p>
 
 <a
-href="https://wa.me/919008710642"
+href="#contact"
 class="btn">
+
+Reserve Table
+
+</a>
+
+</section>
+
+
+<section id="about">
+
+<h2>About</h2>
+
+<p class="about">
+
+Skygarden Bar & Kitchen is a premium rooftop restaurant in Koramangala Bangalore known for cocktails, nightlife, group dining and vibrant ambience. The restaurant offers Asian cuisine, bar food and party experiences making it one of the popular nightlife spots in the area.
+
+</p>
+
+<p>
+
+📍 5th Block Koramangala Bangalore  
+🕐 12PM – 12AM  
+📞 +91 9008710642  
+
+</p>
+
+<a class="btn"
+href="https://maps.google.com/?q=Skygarden Koramangala"
+target="_blank">
+
+Get Directions
+
+</a>
+
+</section>
+
+
+<section id="gallery">
+
+<h2>Experience Skygarden</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0">
+
+<img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187">
+
+<img src="https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e">
+
+<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9">
+
+<img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b">
+
+</div>
+
+</section>
+
+
+<section id="menu">
+
+<h2>Popular Menu</h2>
+
+<div class="menu">
+
+<div>
+
+<h3>Starters</h3>
+
+Dragon Chicken  
+Chilli Paneer  
+Crispy Corn  
+
+</div>
+
+<div>
+
+<h3>Main Course</h3>
+
+Noodles  
+Fried Rice  
+Manchurian  
+
+</div>
+
+<div>
+
+<h3>Bar Menu</h3>
+
+Craft Cocktails  
+Beer Pitchers  
+Mocktails  
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact"
+id="contact">
+
+<h2>Reserve a Table</h2>
+
+<p>Book directly via WhatsApp or phone</p>
+
+<input placeholder="Name">
+
+<input placeholder="Phone">
+
+<br>
+
+<button>
+
+Request Reservation
+
+</button>
+
+<br><br>
+
+<a class="btn"
+href="https://wa.me/919008710642"
+target="_blank">
 
 Book on WhatsApp
 
@@ -108,256 +437,66 @@ Book on WhatsApp
 </section>
 
 
+<section>
 
-<section id="about">
+<h2>Location</h2>
 
-<h2>About</h2>
+<iframe
 
+src="https://maps.google.com/maps?q=Skygarden Koramangala&output=embed"
 
-<p>
+width="100%"
 
-Skygarden Bar & Kitchen is a Koramangala rooftop restaurant known for cocktails, Asian cuisine and nightlife atmosphere.
+height="350"
 
-</p>
+style="border:0">
 
+</iframe>
 
-<div class="details">
-
-
-<p>
-
-📍 17th Main Koramangala 5th Block
-
-</p>
+</section>
 
 
-<p>
+<footer>
 
-🕐 12PM – 12AM
+© 2026 Skygarden Bar & Kitchen
 
-</p>
+<br><br>
 
-
-<p>
-
-💰 ₹1500 for two
-
-</p>
-
-
-<p>
-
-⭐ 4.4 Google Rating
-
-</p>
-
-
-</div>
-
-
-<a
-href="https://www.instagram.com/"
-class="social">
+<a href="https://instagram.com"
+style="color:gold">
 
 Instagram
 
 </a>
 
+|
 
-</section>
+<a href="https://zomato.com"
+style="color:gold">
 
-
-
-<section id="menu">
-
-<h2>Menu</h2>
-
-
-<div class="menu">
-
-
-<div>
-
-<h3>Starters</h3>
-
-<p>Dragon Chicken</p>
-
-<p>Chilli Paneer</p>
-
-<p>Crispy Corn</p>
-
-</div>
-
-
-<div>
-
-<h3>Main Course</h3>
-
-<p>Noodles</p>
-
-<p>Fried Rice</p>
-
-<p>Manchurian</p>
-
-</div>
-
-
-<div>
-
-<h3>Bar</h3>
-
-<p>Craft Cocktails</p>
-
-<p>Beer Pitchers</p>
-
-<p>Mocktails</p>
-
-</div>
-
-
-</div>
-
-
-<a
-href="menu.pdf"
-class="btn">
-
-Download Full Menu
+Zomato
 
 </a>
-
-
-</section>
-
-
-
-<section id="gallery">
-
-
-<h2>Gallery</h2>
-
-
-<div class="gallery">
-
-
-<img
-src="https://images.unsplash.com/photo-restaurant-1">
-
-<img
-src="https://images.unsplash.com/photo-bar">
-
-<img
-src="https://images.unsplash.com/photo-cocktail">
-
-<img
-src="https://images.unsplash.com/photo-dining">
-
-</div>
-
-
-</section>
-
-
-
-<section id="reviews">
-
-
-<h2>Google Reviews</h2>
-
-
-<iframe
-
-src="https://search.google.com/local/reviews?placeid="
-
-width="80%"
-
-height="300">
-
-</iframe>
-
-
-</section>
-
-
-
-<section class="map">
-
-<h2>Location</h2>
-
-
-<iframe
-
-src="https://maps.google.com/maps?q=Skygarden%20Koramangala&t=&z=13&ie=UTF8&iwloc=&output=embed"
-
-width="80%"
-
-height="300">
-
-</iframe>
-
-
-</section>
-
-
-
-<section id="contact">
-
-
-<h2>Reserve Table</h2>
-
-
-<form>
-
-
-<input
-placeholder="Name"
-required>
-
-
-<input
-placeholder="Phone"
-required>
-
-
-<input
-type="date">
-
-
-<button>
-
-Reserve
-
-</button>
-
-
-</form>
-
-
-<p>
-
-📞 +91 9008710642
-
-</p>
-
-
-</section>
-
-
-
-<footer>
-
-
-<p>
-
-© Skygarden Bar & Kitchen
-
-</p>
-
 
 </footer>
 
 
-<script src="script.js"></script>
+<a
+href="https://wa.me/919008710642"
+class="whatsapp">
+
+WhatsApp
+
+</a>
+
+
+<a
+href="tel:+919008710642"
+class="call">
+
+Call
+
+</a>
 
 
 </body>
