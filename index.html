@@ -14,10 +14,7 @@
 <style>
 
 body{
-margin:0;
-font-family:Poppins;
-background:#f7f9fc;
-color:#222;
+background:linear-gradient(135deg,#eef3f9,#ffffff);
 }
 
 header{
@@ -66,6 +63,13 @@ margin-top:20px;
 
 section{
 padding:80px 8%;
+}section{
+padding:80px 8%;
+background:linear-gradient(to bottom,#f7f9fc,#eef3f9);
+}
+
+section:nth-child(even){
+background:white;
 }
 
 h2{
@@ -82,8 +86,13 @@ gap:25px;
 .card{
 background:white;
 padding:25px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
 }
 
 .gallery{
